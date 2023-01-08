@@ -1,4 +1,4 @@
-try{
+
     window.onclick= function WhichButton(event){
         var div=document.querySelector("div");
         var x=event.clientX;
@@ -9,7 +9,3 @@ try{
     }
   
 
-}
-catch(sikilmis){
-    document.write(sikilmis)
-}
