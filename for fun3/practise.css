@@ -1,0 +1,15 @@
+*{
+    background-color: black;
+}
+.x{
+    border: dashed;
+    width: 130px;
+    height: 20px;
+    padding: 10px;
+ margin:250px auto;
+ color: #17D4FE;
+ font-size: 20px;
+ font-family: Orbitron;
+ letter-spacing: 3px;
+
+}
