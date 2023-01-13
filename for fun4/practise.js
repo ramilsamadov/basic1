@@ -18,6 +18,6 @@
   
   
 }
-catch(sikilmis){
-    document.write(sikilmis)
+catch(fmistake){
+    document.write(fmistake)
 }
