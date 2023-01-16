@@ -1,0 +1,52 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    font-size: 25px; 
+
+
+}
+.tooltiptext{
+    font-family: 'Dancing Script', cursive;
+    width: 140px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 4px;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 125%;
+    transform: rotate(60deg) scale(0.1);
+    visibility: hidden;
+    transition: all 0.3s;
+}
+.tooltip{
+    display: inline-block;
+    position: relative;
+    border-bottom: dotted 2px gray;
+}
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    transform: rotate(0deg) scale(1);
+    text-align: center;    
+    width: 120px;
+}
+.tooltip .tooltiptext::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+    }
